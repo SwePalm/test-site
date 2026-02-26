@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="light" lang="sv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Karriär &amp; Kultur - Entercard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #1A237E;
+            --secondary: #303F9F;
+            --accent: #C5CAE9;
+            --background-light: #FAFAFA;
+            --background-dark: #0F172A;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+        }
+        .hero-overlay {
+            background: linear-gradient(75deg, rgba(26, 35, 126, 0.8) 0%, rgba(26, 35, 126, 0.4) 100%);
+        }
+        .job-card:hover {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1A237E",
+                        secondary: "#303F9F",
+                        accent: "#C5CAE9",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<span class="text-2xl font-bold tracking-tight text-primary dark:text-white uppercase">Entercard</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-medium hover:text-primary transition-colors" href="#">Produkter</a>
+<a class="font-medium hover:text-primary transition-colors" href="#">Kundservice</a>
+<a class="font-medium text-primary border-b-2 border-primary" href="#">Karriär</a>
+<a class="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full hover:bg-secondary transition-all shadow-md hover:shadow-lg" href="#">
+<span class="material-symbols-outlined text-lg">lock</span>
+                Logga in
+            </a>
+<button class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400" id="theme-toggle">
+<span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<header class="relative h-[70vh] flex items-center overflow-hidden pt-20">
+<img alt="Collaborative office environment" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyF6GLmKY7ofBkdEJOIuEzbszdfcM_UFI2ir6XRzUhQgK9pewuGGDuxIVEdDZsrhU3yVkOGGXg4H5ZhAkcfSNOj9j7OhyUq-4W1dfW9sP2LehUmyA8HuZ8F941VL0MooRFwZjuQnq9NqhLGBXJ2HC9x0dVnTSKuR6UMoF6RR8ARlLj0OUXmYkcDLL_BBFUnqCenpgYVJt2mBpRd363rc1b48dQ_OE7_8slPD0_wdu-mvqTvcPeVojkN_fixOkPveWIwZA5KvJlgX8"/>
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="relative z-10 px-6 max-w-7xl mx-auto w-full">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-7xl font-display text-white mb-6 leading-tight">
+                Var med och forma framtidens bankupplevelse.
+            </h1>
+<p class="text-xl text-white/90 mb-10 font-light leading-relaxed">
+                Vi är över 450 kollegor från 40 olika länder som arbetar tillsammans för att skapa smartare finansiella lösningar i Skandinavien.
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white text-primary hover:bg-slate-100 px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-xl" href="#openings">
+                    Se lediga tjänster
+                </a>
+<a class="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full text-lg font-semibold transition-all" href="#culture">
+                    Vår kultur
+                </a>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="py-24 bg-white dark:bg-slate-900" id="culture">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Vår Kultur</span>
+<h2 class="text-4xl font-display mb-6 dark:text-white">En arbetsplats där vi växer tillsammans</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        På Entercard tror vi på kraften i mångfald och samarbete. Vi strävar efter en miljö där varje röst räknas och där innovation föds ur olika perspektiv.
+                    </p>
+<div class="space-y-4">
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-accent/20 rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<div>
+<h4 class="font-bold dark:text-white">Inkluderande miljö</h4>
+<p class="text-slate-500 text-sm">Vi firar våra olikheter och främjar en kultur av tillhörighet.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-accent/20 rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div>
+<h4 class="font-bold dark:text-white">Kontinuerligt lärande</h4>
+<p class="text-slate-500 text-sm">Vi investerar i din personliga och professionella utveckling.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-accent/20 rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">balance</span>
+</div>
+<div>
+<h4 class="font-bold dark:text-white">Work-life balance</h4>
+<p class="text-slate-500 text-sm">Flexibilitet som låter dig prestera på topp både hemma och på jobbet.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Team meeting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyVzHExAQWosXJacTyANxZoj4J4yOIm3_sWZmutBzSXAo8cyH9u03s-mTYIYWQtbNma79EFRCefvllw7GmjF0q5onaFunyIu-8DbggmrV1Vb7G8qt8rLrstUVhuvywXWH5quTMhzSENXEr5WfzKzQ5KieB5JIBaWstWR-UhvM9gmtWo7dcqAy9EE2rhHuDzT5wqbX8V45-LuA5kt4kRjSi3WJrOfmvdJZhnOqhVtl4m2_CShrGKoXLvc3MkWvsKZ02vNFAjZgPPjY"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary p-8 rounded-2xl shadow-xl hidden md:block">
+<p class="text-4xl font-display text-white mb-1">40+</p>
+<p class="text-white/80 text-sm uppercase tracking-wider">Nationaliteter</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-slate-50 dark:bg-slate-800/50">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-display mb-12 text-center dark:text-white">Livet på Entercard</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="h-64 rounded-2xl overflow-hidden shadow-md">
+<img alt="Office life 1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqO3xXUvp7tjr7K5PIaGJ70hktKjivN54YTvyqnkehsQkf0vsZLcXn1iS_tnF2hhTvFCZVcf51eOM_Pwa6WdtadNwvttXdAPIpUbMJgj5oeAj1f9o-x5miyQNrask8E4k23_5FAotsJPU71lpPlhOlyNhGRrKPTBkBlPryai-xQ0jQXdOP9Rr5m0OfC3dTtOKcTqocgUF2eusreZLY6v7Li0UDt9zni-qGwVIyqsJX4wjzCQ-k-UUjaLEqIrwJH2yyPDtlWJNvCbU"/>
+</div>
+<div class="h-64 rounded-2xl overflow-hidden shadow-md md:mt-8">
+<img alt="Office life 2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhRHzSqJJPQtNO3pDkIYWLXOXh9DXLcU5PiizC4zHw0D2hQcnB73pdIra2YxoyXicaF-WokpbVWfHaAa0xmtJqy36iFg6OrSaU7GrLe6d5kRjyUEcselZu4ZaXq2lFAJVD8pn_zOlKdvoHo62xPPvTM_PahUYzzTbA_Sy_j4WhkxTUZHKhtnqGeAP10H7-Deu1cWHMLNZPHAuYSJZ_PvPjgBSaqobl-1WAkTVNWKUck69I41Mnp6EGrh70HCAvnbCoimmd_pFB-Hc"/>
+</div>
+<div class="h-64 rounded-2xl overflow-hidden shadow-md">
+<img alt="Office life 3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6i3Mgg0qpO8WtDoCvYk49ENZafGkP5ra3EH0tpxtmuarVweL8M7zpaPxibZvqAmUdOr0WcXqyypl7wr7dexf1KKgGQESjVToeIiKy7k5rNZX9SvTeYdh1tT90gfhTLfagf8St_97tIvHoejFdxT5TOoKB1-aJAtp-euG4GOkNkgAmyQbzjvAGjrmw4iU27ksC1nQIa6JkKWc1vLz0Josxiut69CaCVBKqQAhojFDUfB-tmOqcfdn3XW54p1gzeIjahPRhbbye-G8"/>
+</div>
+<div class="h-64 rounded-2xl overflow-hidden shadow-md md:mt-8">
+<img alt="Office life 4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyF6GLmKY7ofBkdEJOIuEzbszdfcM_UFI2ir6XRzUhQgK9pewuGGDuxIVEdDZsrhU3yVkOGGXg4H5ZhAkcfSNOj9j7OhyUq-4W1dfW9sP2LehUmyA8HuZ8F941VL0MooRFwZjuQnq9NqhLGBXJ2HC9x0dVnTSKuR6UMoF6RR8ARlLj0OUXmYkcDLL_BBFUnqCenpgYVJt2mBpRd363rc1b48dQ_OE7_8slPD0_wdu-mvqTvcPeVojkN_fixOkPveWIwZA5KvJlgX8"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24" id="openings">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<h2 class="text-4xl font-display mb-4 dark:text-white">Lediga tjänster</h2>
+<p class="text-slate-600 dark:text-slate-400">Hitta din nästa utmaning hos oss.</p>
+</div>
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-12 pr-6 py-3 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="Sök avdelning eller roll..." type="text"/>
+</div>
+</div>
+<div class="grid gap-4">
+<div class="job-card bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row items-center gap-8 w-full">
+<div>
+<h3 class="text-xl font-bold dark:text-white">Senior Data Scientist</h3>
+<div class="flex gap-4 mt-2 text-sm text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">domain</span> Analytics</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Stockholm</span>
+</div>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-6 py-2 rounded-full border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Ansök nu
+                    </button>
+</div>
+<div class="job-card bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row items-center gap-8 w-full">
+<div>
+<h3 class="text-xl font-bold dark:text-white">UX Designer</h3>
+<div class="flex gap-4 mt-2 text-sm text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">domain</span> Digital Products</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Oslo</span>
+</div>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-6 py-2 rounded-full border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Ansök nu
+                    </button>
+</div>
+<div class="job-card bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row items-center gap-8 w-full">
+<div>
+<h3 class="text-xl font-bold dark:text-white">Customer Service Agent</h3>
+<div class="flex gap-4 mt-2 text-sm text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">domain</span> Customer Operations</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Köpenhamn</span>
+</div>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-6 py-2 rounded-full border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Ansök nu
+                    </button>
+</div>
+<div class="job-card bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row items-center gap-8 w-full">
+<div>
+<h3 class="text-xl font-bold dark:text-white">Compliance Officer</h3>
+<div class="flex gap-4 mt-2 text-sm text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">domain</span> Legal &amp; Compliance</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Stockholm</span>
+</div>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-6 py-2 rounded-full border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Ansök nu
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-primary rounded-[2rem] p-12 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-16 -mb-16"></div>
+<h2 class="text-3xl md:text-4xl font-display mb-6">Hittar du inte det du söker?</h2>
+<p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+                    Gå med i vår talangpool så kontaktar vi dig när en passande tjänst dyker upp.
+                </p>
+<button class="bg-white text-primary px-10 py-4 rounded-full text-lg font-bold hover:shadow-2xl transition-all hover:-translate-y-1">
+                    Gå med i talangpoolen
+                </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-100 dark:bg-slate-900/50 pt-20 pb-32 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">account_balance</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary dark:text-white">ENTERCARD</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    Ledande leverantör av betal- och kreditkortslösningar på den skandinaviska marknaden.
+                </p>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Produkter</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Kreditkort</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privatlån</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Betallösningar</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Om Entercard</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Hållbarhet</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Press</a></li>
+<li><a class="hover:text-primary transition-colors font-semibold" href="#">Karriär</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Följ oss</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="LinkedIn" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5t20tTVd2wo9ihSmGLTCKQUY_ai75IkqP4HBWD8oTW4OiWADw9Fi5c58VABnm58Sa6FUOgUUhsm7wxLxim8N5pAZNRnzEo2fVUX1Dz_zi9qqTUWM8qTHijxLvk9mBQFrvI9P9qtOYsuNXqg6ODfgRQqFPQUA5YnY2T08Gn1vDtUBbNHq3Mc4PHAVHIqAMuZkeLzA4ZvwIBSkBzYKPVBof1zSClOeVmNV6kgO4cYoxGvsRJ0mXjhmQl5m0kR9Oks8OEo6TgTUSF5U"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="Facebook" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEds6ZV7xLN3E8EzLi14W91WjA8O7hhwtEgdlqbHE9gipR7M9RMBpcAHCigFIB9_VCWYlTIUAUTxB_yv4S1k5Ivjib81GzUIjgvmnP49NRMu1dsBbL6pgdAho3Q_fzbf8Lk-ui-NmceHllX_5wCMrYalIqSVnHtOgVe5EqaUV12NOCGRisAQe-r5reM7j9kJ5wioBwTfmiiqqHaiTAXf0anCx786KGIzQzhpt9vBTX53Vr2B2gzcZlG0mkMnrlUuCKDzvdfHUWIMo"/>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<p>© 2024 Entercard Group AB. Org nr: 556673-0585</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+<a class="hover:text-primary transition-colors" href="#">Integritetspolicy</a>
+<a class="hover:text-primary transition-colors" href="#">Tillgänglighetsredogörelse</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    themeToggleBtn.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+    });
+</script>
+
+</body></html>

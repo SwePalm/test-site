@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="light" lang="sv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Entercard - Moderna finansiella lösningar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1A237E", // Deep sophisticated blue
+                        secondary: "#303F9F",
+                        accent: "#C5CAE9",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-icons-round">account_balance</span>
+</div>
+<span class="text-2xl font-bold tracking-tight text-primary dark:text-white uppercase">Entercard</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-medium hover:text-primary transition-colors" href="#">Produkter</a>
+<a class="font-medium hover:text-primary transition-colors" href="#">Kundservice</a>
+<a class="font-medium hover:text-primary transition-colors" href="#">Om oss</a>
+<a class="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full hover:bg-secondary transition-all shadow-md hover:shadow-lg" href="#">
+<span class="material-icons-round text-lg">lock</span>
+                    Logga in
+                </a>
+<button class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400" id="theme-toggle">
+<span class="material-icons-round block dark:hidden">dark_mode</span>
+<span class="material-icons-round hidden dark:block">light_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<header class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+<img alt="Vinterlandskap i Skandinavien" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqO3xXUvp7tjr7K5PIaGJ70hktKjivN54YTvyqnkehsQkf0vsZLcXn1iS_tnF2hhTvFCZVcf51eOM_Pwa6WdtadNwvttXdAPIpUbMJgj5oeAj1f9o-x5miyQNrask8E4k23_5FAotsJPU71lpPlhOlyNhGRrKPTBkBlPryai-xQ0jQXdOP9Rr5m0OfC3dTtOKcTqocgUF2eusreZLY6v7Li0UDt9zni-qGwVIyqsJX4wjzCQ-k-UUjaLEqIrwJH2yyPDtlWJNvCbU"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+<h1 class="text-5xl md:text-7xl font-display text-white mb-8 leading-tight">
+                Finansiella lösningar som förenklar din vardag.
+            </h1>
+<p class="text-xl md:text-2xl text-white/90 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
+                Vi kombinerar trygghet med digital innovation för att ge dig full kontroll över din ekonomi.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary hover:bg-secondary text-white px-10 py-4 rounded-full text-lg font-semibold transition-all shadow-xl hover:scale-105" href="#">
+                    Upptäck våra tjänster
+                </a>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-40 relative z-20">
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl hover:-translate-y-2 transition-transform duration-300 border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden">
+<img alt="Person som signerar digitalt" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyVzHExAQWosXJacTyANxZoj4J4yOIm3_sWZmutBzSXAo8cyH9u03s-mTYIYWQtbNma79EFRCefvllw7GmjF0q5onaFunyIu-8DbggmrV1Vb7G8qt8rLrstUVhuvywXWH5quTMhzSENXEr5WfzKzQ5KieB5JIBaWstWR-UhvM9gmtWo7dcqAy9EE2rhHuDzT5wqbX8V45-LuA5kt4kRjSi3WJrOfmvdJZhnOqhVtl4m2_CShrGKoXLvc3MkWvsKZ02vNFAjZgPPjY"/>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-slate-800/90 p-2 rounded-full">
+<span class="material-icons-round text-primary dark:text-accent">verified_user</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-semibold mb-4 dark:text-white">Kundkännedom</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                        Säkerhet är vår prioritet. Genom KYC säkerställer vi att dina tjänster används tryggt och i enlighet med gällande regler.
+                    </p>
+<a class="inline-flex items-center text-primary dark:text-accent font-semibold hover:underline group" href="#">
+                        Läs mer om KYC
+                        <span class="material-icons-round ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl hover:-translate-y-2 transition-transform duration-300 border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden">
+<img alt="Digitala betalningar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhRHzSqJJPQtNO3pDkIYWLXOXh9DXLcU5PiizC4zHw0D2hQcnB73pdIra2YxoyXicaF-WokpbVWfHaAa0xmtJqy36iFg6OrSaU7GrLe6d5kRjyUEcselZu4ZaXq2lFAJVD8pn_zOlKdvoHo62xPPvTM_PahUYzzTbA_Sy_j4WhkxTUZHKhtnqGeAP10H7-Deu1cWHMLNZPHAuYSJZ_PvPjgBSaqobl-1WAkTVNWKUck69I41Mnp6EGrh70HCAvnbCoimmd_pFB-Hc"/>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-slate-800/90 p-2 rounded-full">
+<span class="material-icons-round text-primary dark:text-accent">credit_card</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-semibold mb-4 dark:text-white">Våra Produkter</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                        Från re:member till skräddarsydda partnerskap. Vi erbjuder kreditkort och lån anpassade efter ditt liv.
+                    </p>
+<a class="inline-flex items-center text-primary dark:text-accent font-semibold hover:underline group" href="#">
+                        Utforska sortimentet
+                        <span class="material-icons-round ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl hover:-translate-y-2 transition-transform duration-300 border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden">
+<img alt="Teamarbete" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyF6GLmKY7ofBkdEJOIuEzbszdfcM_UFI2ir6XRzUhQgK9pewuGGDuxIVEdDZsrhU3yVkOGGXg4H5ZhAkcfSNOj9j7OhyUq-4W1dfW9sP2LehUmyA8HuZ8F941VL0MooRFwZjuQnq9NqhLGBXJ2HC9x0dVnTSKuR6UMoF6RR8ARlLj0OUXmYkcDLL_BBFUnqCenpgYVJt2mBpRd363rc1b48dQ_OE7_8slPD0_wdu-mvqTvcPeVojkN_fixOkPveWIwZA5KvJlgX8"/>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-slate-800/90 p-2 rounded-full">
+<span class="material-icons-round text-primary dark:text-accent">work_outline</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-semibold mb-4 dark:text-white">Jobba hos oss</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                        Bli en del av ett team med över 450 kollegor från 40 olika länder. Vi bygger framtidens bank tillsammans.
+                    </p>
+<a class="inline-flex items-center text-primary dark:text-accent font-semibold hover:underline group" href="#">
+                        Se lediga tjänster
+                        <span class="material-icons-round ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 rounded-3xl group-hover:bg-primary/15 transition-colors"></div>
+<img alt="Vindkraftverk i havet" class="relative rounded-2xl shadow-lg w-full h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6i3Mgg0qpO8WtDoCvYk49ENZafGkP5ra3EH0tpxtmuarVweL8M7zpaPxibZvqAmUdOr0WcXqyypl7wr7dexf1KKgGQESjVToeIiKy7k5rNZX9SvTeYdh1tT90gfhTLfagf8St_97tIvHoejFdxT5TOoKB1-aJAtp-euG4GOkNkgAmyQbzjvAGjrmw4iU27ksC1nQIa6JkKWc1vLz0Josxiut69CaCVBKqQAhojFDUfB-tmOqcfdn3XW54p1gzeIjahPRhbbye-G8"/>
+</div>
+<div>
+<h2 class="text-4xl font-display mb-6 dark:text-white">Hållbarhet och transparens</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                    Vi tar ansvar för vår påverkan på miljön och samhället. Här kan du ta del av våra finansiella rapporter, hållbarhetsarbete och senaste publikationer.
+                </p>
+<button class="px-8 py-3 border-2 border-primary text-primary dark:border-accent dark:text-accent font-semibold rounded-full hover:bg-primary hover:text-white dark:hover:bg-accent dark:hover:text-primary transition-all">
+                    Finansiell information
+                </button>
+</div>
+</div>
+</main>
+<footer class="bg-slate-100 dark:bg-slate-900/50 pt-20 pb-32 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-icons-round text-sm">account_balance</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary dark:text-white">ENTERCARD</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Ledande leverantör av betal- och kreditkortslösningar på den skandinaviska marknaden.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Produkter</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Kreditkort</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privatlån</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Betallösningar</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Om Entercard</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Hållbarhet</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Press</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Karriär</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Följ oss</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="LinkedIn" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5t20tTVd2wo9ihSmGLTCKQUY_ai75IkqP4HBWD8oTW4OiWADw9Fi5c58VABnm58Sa6FUOgUUhsm7wxLxim8N5pAZNRnzEo2fVUX1Dz_zi9qqTUWM8qTHijxLvk9mBQFrvI9P9qtOYsuNXqg6ODfgRQqFPQUA5YnY2T08Gn1vDtUBbNHq3Mc4PHAVHIqAMuZkeLzA4ZvwIBSkBzYKPVBof1zSClOeVmNV6kgO4cYoxGvsRJ0mXjhmQl5m0kR9Oks8OEo6TgTUSF5U"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="Facebook" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEds6ZV7xLN3E8EzLi14W91WjA8O7hhwtEgdlqbHE9gipR7M9RMBpcAHCigFIB9_VCWYlTIUAUTxB_yv4S1k5Ivjib81GzUIjgvmnP49NRMu1dsBbL6pgdAho3Q_fzbf8Lk-ui-NmceHllX_5wCMrYalIqSVnHtOgVe5EqaUV12NOCGRisAQe-r5reM7j9kJ5wioBwTfmiiqqHaiTAXf0anCx786KGIzQzhpt9vBTX53Vr2B2gzcZlG0mkMnrlUuCKDzvdfHUWIMo"/>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<p>© 2024 Entercard Group AB. Org nr: 556673-0585</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+<a class="hover:text-primary transition-colors" href="#">Integritetspolicy</a>
+<a class="hover:text-primary transition-colors" href="#">Tillgänglighetsredogörelse</a>
+</div>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-0 inset-x-0 z-[100] p-4 transform translate-y-0 transition-transform duration-500" id="cookie-banner">
+<div class="max-w-5xl mx-auto bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-slate-200 dark:border-slate-800 shadow-2xl rounded-2xl p-6 md:p-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex-1">
+<h5 class="text-lg font-bold mb-2 dark:text-white flex items-center gap-2">
+<span class="material-icons-round text-primary dark:text-accent">cookie</span>
+                        Vi värnar om din integritet
+                    </h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Vi använder cookies för att förbättra din upplevelse, analysera trafik och personanpassa annonser. Genom att klicka på "Godkänn alla" samtycker du till vår användning av cookies. 
+                        <a class="text-primary dark:text-accent underline font-medium" href="#">Läs vår policy</a>.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-3 shrink-0">
+<button class="px-6 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors" onclick="closeBanner()">
+                        Inställningar
+                    </button>
+<button class="px-8 py-2.5 text-sm font-bold bg-primary text-white rounded-full shadow-lg shadow-primary/20 hover:bg-secondary transition-all" onclick="closeBanner()">
+                        Godkänn alla
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+        // Simple theme toggle functionality
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+        });
+        // Cookie banner dismissal
+        function closeBanner() {
+            const banner = document.getElementById('cookie-banner');
+            banner.classList.add('translate-y-full');
+            setTimeout(() => banner.remove(), 500);
+        }
+    </script>
+
+</body></html>

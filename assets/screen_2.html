@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="light" lang="sv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Om oss &amp; Hållbarhet - Entercard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #1A237E;
+            --secondary: #303F9F;
+            --accent: #C5CAE9;
+            --background-light: #FAFAFA;
+            --background-dark: #0F172A;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: #E2E8F0;
+        }
+        .dark .timeline-line::before {
+            background: #334155;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1A237E",
+                        secondary: "#303F9F",
+                        accent: "#C5CAE9",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Playfair Display", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-[#FAFAFA] dark:bg-[#0F172A] text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<span class="text-2xl font-bold tracking-tight text-primary dark:text-white uppercase">Entercard</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-medium hover:text-primary transition-colors" href="#">Produkter</a>
+<a class="font-medium hover:text-primary transition-colors" href="#">Kundservice</a>
+<a class="font-medium text-primary dark:text-accent" href="#">Om oss</a>
+<a class="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full hover:bg-secondary transition-all shadow-md" href="#">
+<span class="material-symbols-outlined text-lg">lock</span>
+                Logga in
+            </a>
+<button class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400" id="theme-toggle">
+<span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+<img alt="Skandinaviskt landskap" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqO3xXUvp7tjr7K5PIaGJ70hktKjivN54YTvyqnkehsQkf0vsZLcXn1iS_tnF2hhTvFCZVcf51eOM_Pwa6WdtadNwvttXdAPIpUbMJgj5oeAj1f9o-x5miyQNrask8E4k23_5FAotsJPU71lpPlhOlyNhGRrKPTBkBlPryai-xQ0jQXdOP9Rr5m0OfC3dTtOKcTqocgUF2eusreZLY6v7Li0UDt9zni-qGwVIyqsJX4wjzCQ-k-UUjaLEqIrwJH2yyPDtlWJNvCbU"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+<h1 class="text-5xl md:text-6xl font-display text-white mb-6 leading-tight">
+            Vi skapar finansiell trygghet och en hållbar framtid
+        </h1>
+<p class="text-xl text-white/90 font-light max-w-2xl mx-auto">
+            Vår resa handlar om mer än siffror. Det handlar om människor, innovation och ett gemensamt ansvar för vår planet.
+        </p>
+</div>
+</header>
+<main>
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-display mb-4">Vår historia</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+                Sedan starten har vi arbetat för att utmana och förbättra den skandinaviska kreditmarknaden.
+            </p>
+</div>
+<div class="relative timeline-line py-10">
+<div class="relative mb-20 flex justify-between items-center w-full">
+<div class="hidden md:block w-5/12"></div>
+<div class="z-20 flex items-center order-1 bg-primary shadow-xl w-10 h-10 rounded-full">
+<h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+</div>
+<div class="order-1 bg-white dark:bg-slate-900 rounded-2xl shadow-lg w-full md:w-5/12 px-8 py-6 border border-slate-100 dark:border-slate-800">
+<span class="text-primary dark:text-accent font-bold text-xl">2005</span>
+<h3 class="mb-3 font-bold text-gray-800 dark:text-white text-xl">Grundandet</h3>
+<p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        Entercard grundas som ett joint venture för att skapa innovativa betallösningar på den nordiska marknaden.
+                    </p>
+</div>
+</div>
+<div class="relative mb-20 flex justify-between items-center w-full">
+<div class="order-1 bg-white dark:bg-slate-900 rounded-2xl shadow-lg w-full md:w-5/12 px-8 py-6 border border-slate-100 dark:border-slate-800">
+<span class="text-primary dark:text-accent font-bold text-xl">2010</span>
+<h3 class="mb-3 font-bold text-gray-800 dark:text-white text-xl">Expansion</h3>
+<p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        Vi lanserar våra egna varumärken och utökar verksamheten till hela Skandinavien med fokus på digital användarvänlighet.
+                    </p>
+</div>
+<div class="z-20 flex items-center order-1 bg-primary shadow-xl w-10 h-10 rounded-full">
+<h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+</div>
+<div class="hidden md:block w-5/12"></div>
+</div>
+<div class="relative mb-20 flex justify-between items-center w-full">
+<div class="hidden md:block w-5/12"></div>
+<div class="z-20 flex items-center order-1 bg-primary shadow-xl w-10 h-10 rounded-full">
+<h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+</div>
+<div class="order-1 bg-white dark:bg-slate-900 rounded-2xl shadow-lg w-full md:w-5/12 px-8 py-6 border border-slate-100 dark:border-slate-800">
+<span class="text-primary dark:text-accent font-bold text-xl">Idag</span>
+<h3 class="mb-3 font-bold text-gray-800 dark:text-white text-xl">Marknadsledande</h3>
+<p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        Med över 2 miljoner kunder är vi en av de ledande aktörerna inom kreditkort och konsumentkrediter i Norden.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-slate-50 dark:bg-slate-900/40 py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-4xl font-display mb-6">Vårt ansvar (CSR)</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                        Hållbarhet är integrerat i allt vi gör. Vi fokuserar på ansvarsfull kreditgivning, ekonomisk inkludering och att minska vårt miljöavtryck. Genom att investera i förnybar energi och digitalisera våra processer skapar vi långsiktigt värde.
+                    </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm">
+<div class="text-3xl font-bold text-primary dark:text-accent mb-2">100%</div>
+<p class="text-sm text-slate-500">Förnybar energi i våra lokaler</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm">
+<div class="text-3xl font-bold text-primary dark:text-accent mb-2">-40%</div>
+<p class="text-sm text-slate-500">Minskat koldioxidavtryck sedan 2019</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm">
+<div class="text-3xl font-bold text-primary dark:text-accent mb-2">95%</div>
+<p class="text-sm text-slate-500">Digitala fakturor</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm">
+<div class="text-3xl font-bold text-primary dark:text-accent mb-2">40+</div>
+<p class="text-sm text-slate-500">Nationaliteter bland anställda</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<img alt="Hållbar energi" class="rounded-3xl shadow-2xl object-cover h-[500px] w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6i3Mgg0qpO8WtDoCvYk49ENZafGkP5ra3EH0tpxtmuarVweL8M7zpaPxibZvqAmUdOr0WcXqyypl7wr7dexf1KKgGQESjVToeIiKy7k5rNZX9SvTeYdh1tT90gfhTLfagf8St_97tIvHoejFdxT5TOoKB1-aJAtp-euG4GOkNkgAmyQbzjvAGjrmw4iU27ksC1nQIa6JkKWc1vLz0Josxiut69CaCVBKqQAhojFDUfB-tmOqcfdn3XW54p1gzeIjahPRhbbye-G8"/>
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl max-w-xs">
+<span class="material-symbols-outlined text-4xl text-green-500 mb-4">eco</span>
+<p class="text-sm font-medium italic">"Vi mäter vår framgång inte bara i vinst, utan i den positiva inverkan vi har på samhället."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-display mb-4">Ledarskap</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+                Vårt ledarteam kombinerar internationell expertis med lokal marknadskännedom.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="group">
+<div class="relative overflow-hidden rounded-2xl mb-6">
+<img alt="Leadership member" class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyF6GLmKY7ofBkdEJOIuEzbszdfcM_UFI2ir6XRzUhQgK9pewuGGDuxIVEdDZsrhU3yVkOGGXg4H5ZhAkcfSNOj9j7OhyUq-4W1dfW9sP2LehUmyA8HuZ8F941VL0MooRFwZjuQnq9NqhLGBXJ2HC9x0dVnTSKuR6UMoF6RR8ARlLj0OUXmYkcDLL_BBFUnqCenpgYVJt2mBpRd363rc1b48dQ_OE7_8slPD0_wdu-mvqTvcPeVojkN_fixOkPveWIwZA5KvJlgX8"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white font-bold text-xl">Erik Bergström</p>
+<p class="text-white/80 text-sm">Verkställande direktör</p>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    Erik har över 20 års erfarenhet från banksektorn och brinner för att driva digital transformation med kunden i fokus.
+                </p>
+</div>
+<div class="group">
+<div class="relative overflow-hidden rounded-2xl mb-6">
+<img alt="Leadership member" class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyVzHExAQWosXJacTyANxZoj4J4yOIm3_sWZmutBzSXAo8cyH9u03s-mTYIYWQtbNma79EFRCefvllw7GmjF0q5onaFunyIu-8DbggmrV1Vb7G8qt8rLrstUVhuvywXWH5quTMhzSENXEr5WfzKzQ5KieB5JIBaWstWR-UhvM9gmtWo7dcqAy9EE2rhHuDzT5wqbX8V45-LuA5kt4kRjSi3WJrOfmvdJZhnOqhVtl4m2_CShrGKoXLvc3MkWvsKZ02vNFAjZgPPjY"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white font-bold text-xl">Sarah Lund</p>
+<p class="text-white/80 text-sm">Chef för Hållbarhet</p>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    Sarah leder vårt strategiska arbete inom CSR och säkerställer att vi når våra ambitiösa miljömål.
+                </p>
+</div>
+<div class="group">
+<div class="relative overflow-hidden rounded-2xl mb-6">
+<img alt="Leadership member" class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhRHzSqJJPQtNO3pDkIYWLXOXh9DXLcU5PiizC4zHw0D2hQcnB73pdIra2YxoyXicaF-WokpbVWfHaAa0xmtJqy36iFg6OrSaU7GrLe6d5kRjyUEcselZu4ZaXq2lFAJVD8pn_zOlKdvoHo62xPPvTM_PahUYzzTbA_Sy_j4WhkxTUZHKhtnqGeAP10H7-Deu1cWHMLNZPHAuYSJZ_PvPjgBSaqobl-1WAkTVNWKUck69I41Mnp6EGrh70HCAvnbCoimmd_pFB-Hc"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white font-bold text-xl">Johan Nilsson</p>
+<p class="text-white/80 text-sm">Teknikchef (CTO)</p>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    Johan ansvarar för vår tekniska arkitektur och att våra digitala lösningar håller högsta säkerhetsklass.
+                </p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-100 dark:bg-slate-900/50 pt-20 pb-32 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">account_balance</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary dark:text-white uppercase">Entercard</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    Ledande leverantör av betal- och kreditkortslösningar på den skandinaviska marknaden.
+                </p>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white uppercase text-xs tracking-widest">Produkter</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Kreditkort</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privatlån</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Betallösningar</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white uppercase text-xs tracking-widest">Om Entercard</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Hållbarhet</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Press</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Karriär</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white uppercase text-xs tracking-widest">Följ oss</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="LinkedIn" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5t20tTVd2wo9ihSmGLTCKQUY_ai75IkqP4HBWD8oTW4OiWADw9Fi5c58VABnm58Sa6FUOgUUhsm7wxLxim8N5pAZNRnzEo2fVUX1Dz_zi9qqTUWM8qTHijxLvk9mBQFrvI9P9qtOYsuNXqg6ODfgRQqFPQUA5YnY2T08Gn1vDtUBbNHq3Mc4PHAVHIqAMuZkeLzA4ZvwIBSkBzYKPVBof1zSClOeVmNV6kgO4cYoxGvsRJ0mXjhmQl5m0kR9Oks8OEo6TgTUSF5U"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="Facebook" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEds6ZV7xLN3E8EzLi14W91WjA8O7hhwtEgdlqbHE9gipR7M9RMBpcAHCigFIB9_VCWYlTIUAUTxB_yv4S1k5Ivjib81GzUIjgvmnP49NRMu1dsBbL6pgdAho3Q_fzbf8Lk-ui-NmceHllX_5wCMrYalIqSVnHtOgVe5EqaUV12NOCGRisAQe-r5reM7j9kJ5wioBwTfmiiqqHaiTAXf0anCx786KGIzQzhpt9vBTX53Vr2B2gzcZlG0mkMnrlUuCKDzvdfHUWIMo"/>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<p>© 2024 Entercard Group AB. Org nr: 556673-0585</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+<a class="hover:text-primary transition-colors" href="#">Integritetspolicy</a>
+</div>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-0 inset-x-0 z-[100] p-4 transform translate-y-0 transition-transform duration-500" id="cookie-banner">
+<div class="max-w-5xl mx-auto bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-slate-200 dark:border-slate-800 shadow-2xl rounded-2xl p-6">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex-1">
+<h5 class="text-lg font-bold mb-1 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-accent">cookie</span>
+                    Integritet &amp; Cookies
+                </h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">
+                    Vi använder cookies för att optimera din upplevelse. Genom att fortsätta godkänner du vår policy.
+                </p>
+</div>
+<div class="flex gap-3 shrink-0">
+<button class="px-6 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors" onclick="closeBanner()">Inställningar</button>
+<button class="px-8 py-2.5 text-sm font-bold bg-primary text-white rounded-full shadow-lg hover:bg-secondary transition-all" onclick="closeBanner()">Godkänn</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    themeToggleBtn.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+    });
+    function closeBanner() {
+        const banner = document.getElementById('cookie-banner');
+        banner.classList.add('translate-y-full');
+        setTimeout(() => banner.remove(), 500);
+    }
+</script>
+
+</body></html>

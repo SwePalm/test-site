@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="light" lang="sv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Produkter - Entercard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #1A237E;
+            --secondary: #303F9F;
+            --accent: #C5CAE9;
+            --background-light: #FAFAFA;
+            --background-dark: #0F172A;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1A237E",
+                        secondary: "#303F9F",
+                        accent: "#C5CAE9",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Playfair Display", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<span class="text-2xl font-bold tracking-tight text-primary dark:text-white uppercase">Entercard</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-medium text-primary dark:text-accent border-b-2 border-primary dark:border-accent py-2" href="#">Produkter</a>
+<a class="font-medium hover:text-primary dark:hover:text-accent transition-colors" href="#">Kundservice</a>
+<a class="font-medium hover:text-primary dark:hover:text-accent transition-colors" href="#">Om oss</a>
+<a class="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full hover:bg-secondary transition-all shadow-md" href="#">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+                Logga in
+            </a>
+<button class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400" id="theme-toggle">
+<span class="material-symbols-outlined block dark:hidden text-[20px]">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<div class="pt-20 bg-white dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-14 flex items-center gap-8 overflow-x-auto no-scrollbar">
+<a class="text-sm font-semibold text-primary dark:text-accent whitespace-nowrap" href="#kreditkort">Kreditkort</a>
+<a class="text-sm font-medium text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-accent whitespace-nowrap" href="#privatlan">Privatlån</a>
+<a class="text-sm font-medium text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-accent whitespace-nowrap" href="#betallosningar">Betallösningar</a>
+<a class="text-sm font-medium text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-accent whitespace-nowrap" href="#partnerskap">För samarbetspartners</a>
+</div>
+</div>
+<main class="max-w-7xl mx-auto px-6 py-20">
+<div class="mb-16">
+<h1 class="text-4xl md:text-5xl font-display text-slate-900 dark:text-white mb-6">Våra finansiella lösningar</h1>
+<p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+            Vi erbjuder ett brett urval av produkter utformade för att ge dig flexibilitet och trygghet i din vardagsekonomi.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+<div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all duration-300">
+<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 text-primary dark:text-accent">
+<span class="material-symbols-outlined text-3xl">credit_card</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 dark:text-white">Kreditkort</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                Välj bland marknadens mest förmånliga kreditkort med försäkringar, cashback och global acceptans.
+            </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> Inga årsavgifter tillgängliga
+                </li>
+<li class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> Omfattande reseförsäkring
+                </li>
+</ul>
+<a class="inline-flex items-center text-primary dark:text-accent font-bold group-hover:gap-3 transition-all" href="#">
+                Läs Mer <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all duration-300">
+<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 text-primary dark:text-accent">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 dark:text-white">Privatlån</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                Flexibla lån för livets alla skeden. Ansök digitalt och få besked direkt med konkurrenskraftiga räntor.
+            </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> Låna upp till 500 000 kr
+                </li>
+<li class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> Signera med BankID
+                </li>
+</ul>
+<a class="inline-flex items-center text-primary dark:text-accent font-bold group-hover:gap-3 transition-all" href="#">
+                Läs Mer <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all duration-300">
+<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 text-primary dark:text-accent">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 dark:text-white">Betallösningar</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                Moderna betallösningar för e-handel och fysisk handel som optimerar kassaflödet och kundupplevelsen.
+            </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> Sömlös integration
+                </li>
+<li class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> Realtidsanalys
+                </li>
+</ul>
+<a class="inline-flex items-center text-primary dark:text-accent font-bold group-hover:gap-3 transition-all" href="#">
+                Läs Mer <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<section class="bg-slate-50 dark:bg-slate-900/80 rounded-3xl p-8 md:p-12 border border-slate-100 dark:border-slate-800" id="compare">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-display mb-4 dark:text-white">Jämför våra kreditkort</h2>
+<p class="text-slate-600 dark:text-slate-400">Hitta det kort som passar din livsstil bäst.</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-slate-200 dark:border-slate-800">
+<th class="py-6 font-semibold dark:text-white">Egenskaper</th>
+<th class="py-6 font-semibold dark:text-white px-4">Gold Card</th>
+<th class="py-6 font-semibold dark:text-white px-4">Platinum Elite</th>
+<th class="py-6 font-semibold dark:text-white px-4">Flex Card</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 dark:divide-slate-800/50">
+<tr>
+<td class="py-6 text-slate-600 dark:text-slate-400">Årsavgift</td>
+<td class="py-6 px-4 dark:text-white">0 kr första året</td>
+<td class="py-6 px-4 dark:text-white">1 495 kr</td>
+<td class="py-6 px-4 dark:text-white">0 kr</td>
+</tr>
+<tr>
+<td class="py-6 text-slate-600 dark:text-slate-400">Kreditgräns</td>
+<td class="py-6 px-4 dark:text-white">Upp till 100 000 kr</td>
+<td class="py-6 px-4 dark:text-white">Upp till 500 000 kr</td>
+<td class="py-6 px-4 dark:text-white">Upp till 50 000 kr</td>
+</tr>
+<tr>
+<td class="py-6 text-slate-600 dark:text-slate-400">Reseförsäkring</td>
+<td class="py-6 px-4"><span class="material-symbols-outlined text-green-500">check</span></td>
+<td class="py-6 px-4"><span class="material-symbols-outlined text-green-500">check</span></td>
+<td class="py-6 px-4"><span class="material-symbols-outlined text-slate-300">close</span></td>
+</tr>
+<tr>
+<td class="py-6 text-slate-600 dark:text-slate-400">Lounge-tillgång</td>
+<td class="py-6 px-4"><span class="material-symbols-outlined text-slate-300">close</span></td>
+<td class="py-6 px-4"><span class="material-symbols-outlined text-green-500">check</span></td>
+<td class="py-6 px-4"><span class="material-symbols-outlined text-slate-300">close</span></td>
+</tr>
+<tr>
+<td class="py-6"></td>
+<td class="py-6 px-4">
+<button class="text-xs font-bold uppercase tracking-wider bg-primary text-white px-4 py-2 rounded-full">Ansök nu</button>
+</td>
+<td class="py-6 px-4">
+<button class="text-xs font-bold uppercase tracking-wider bg-primary text-white px-4 py-2 rounded-full">Ansök nu</button>
+</td>
+<td class="py-6 px-4">
+<button class="text-xs font-bold uppercase tracking-wider border border-primary text-primary px-4 py-2 rounded-full">Läs mer</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<footer class="bg-slate-100 dark:bg-slate-900/50 pt-20 pb-12 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary dark:text-white uppercase">ENTERCARD</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    Ledande leverantör av betal- och kreditkortslösningar på den skandinaviska marknaden.
+                </p>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Produkter</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary dark:hover:text-accent transition-colors" href="#">Kreditkort</a></li>
+<li><a class="hover:text-primary dark:hover:text-accent transition-colors" href="#">Privatlån</a></li>
+<li><a class="hover:text-primary dark:hover:text-accent transition-colors" href="#">Betallösningar</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Om oss</h4>
+<ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary dark:hover:text-accent transition-colors" href="#">Hållbarhet</a></li>
+<li><a class="hover:text-primary dark:hover:text-accent transition-colors" href="#">Press</a></li>
+<li><a class="hover:text-primary dark:hover:text-accent transition-colors" href="#">Karriär</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Följ oss</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="LinkedIn" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5t20tTVd2wo9ihSmGLTCKQUY_ai75IkqP4HBWD8oTW4OiWADw9Fi5c58VABnm58Sa6FUOgUUhsm7wxLxim8N5pAZNRnzEo2fVUX1Dz_zi9qqTUWM8qTHijxLvk9mBQFrvI9P9qtOYsuNXqg6ODfgRQqFPQUA5YnY2T08Gn1vDtUBbNHq3Mc4PHAVHIqAMuZkeLzA4ZvwIBSkBzYKPVBof1zSClOeVmNV6kgO4cYoxGvsRJ0mXjhmQl5m0kR9Oks8OEo6TgTUSF5U"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm hover:text-primary transition-all" href="#">
+<img alt="Facebook" class="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEds6ZV7xLN3E8EzLi14W91WjA8O7hhwtEgdlqbHE9gipR7M9RMBpcAHCigFIB9_VCWYlTIUAUTxB_yv4S1k5Ivjib81GzUIjgvmnP49NRMu1dsBbL6pgdAho3Q_fzbf8Lk-ui-NmceHllX_5wCMrYalIqSVnHtOgVe5EqaUV12NOCGRisAQe-r5reM7j9kJ5wioBwTfmiiqqHaiTAXf0anCx786KGIzQzhpt9vBTX53Vr2B2gzcZlG0mkMnrlUuCKDzvdfHUWIMo"/>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+<p>© 2024 Entercard Group AB. Org nr: 556673-0585</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+<a class="hover:text-primary transition-colors" href="#">Integritetspolicy</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    themeToggleBtn.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+    });
+</script>
+
+</body></html>
